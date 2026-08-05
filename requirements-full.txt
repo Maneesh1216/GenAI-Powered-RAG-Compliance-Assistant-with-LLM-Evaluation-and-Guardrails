@@ -1,0 +1,18 @@
+-r requirements.txt
+
+# Retrieval quality
+sentence-transformers>=2.2      # transformer embeddings (replaces the hashing fallback)
+faiss-cpu>=1.7                  # ANN index (replaces the numpy matmul)
+
+# Serving
+fastapi>=0.110
+uvicorn[standard]>=0.27
+streamlit>=1.30
+pydantic>=2.0
+
+# Tracking + docs
+mlflow>=2.10
+pypdf>=4.0                      # PDF ingestion
+
+# Dev
+pytest>=7.4
